@@ -58,9 +58,9 @@ void QGCPalette::_buildMap()
     DECLARE_QGC_COLOR(button,               "#ffffff", "#ffffff", "#707070", "#626270")
     DECLARE_QGC_COLOR(buttonBorder,         "#ffffff", "#d9d9d9", "#707070", "#adadb8")
     DECLARE_QGC_COLOR(buttonText,           "#9d9d9d", "#000000", "#A6A6A6", "#ffffff")
-    DECLARE_QGC_COLOR(buttonHighlight,      "#e4e4e4", "#946120", "#3a3a3a", "#fff291")
+    DECLARE_QGC_COLOR(buttonHighlight,      "#e4e4e4", "#946120", "#3a3a3a", "#46c4f4")
     DECLARE_QGC_COLOR(buttonHighlightText,  "#2c2c2c", "#ffffff", "#2c2c2c", "#000000")
-    DECLARE_QGC_COLOR(primaryButton,        "#585858", "#8cb3be", "#585858", "#8cb3be")
+    DECLARE_QGC_COLOR(primaryButton,        "#585858", "#8cb3be", "#585858", "#46c4f4")
     DECLARE_QGC_COLOR(primaryButtonText,    "#2c2c2c", "#000000", "#2c2c2c", "#000000")
     DECLARE_QGC_COLOR(textField,            "#ffffff", "#ffffff", "#707070", "#ffffff")
     DECLARE_QGC_COLOR(textFieldText,        "#808080", "#000000", "#000000", "#000000")
@@ -86,7 +86,7 @@ void QGCPalette::_buildMap()
 
     // Colors not affecting by theming
     //                                              Disabled    Enabled
-    DECLARE_QGC_NONTHEMED_COLOR(brandingPurple,     "#4A2C6D", "#4A2C6D")
+    DECLARE_QGC_NONTHEMED_COLOR(brandingPurple,     "#46c4f4", "#46c4f4")
     DECLARE_QGC_NONTHEMED_COLOR(brandingBlue,       "#48D6FF", "#6045c5")
     DECLARE_QGC_NONTHEMED_COLOR(toolStripFGColor,   "#707070", "#ffffff")
 
