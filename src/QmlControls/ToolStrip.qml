@@ -21,6 +21,8 @@ Rectangle {
     width:      ScreenTools.defaultFontPixelWidth * 8
     height:     Math.min(maxHeight, toolStripColumn.height + (flickable.anchors.margins * 2))
     radius:     ScreenTools.defaultFontPixelWidth / 2
+    border.color: "#46c4f4"
+    border.width: ScreenTools.defaultFontPixelWidth * 0.1 // Adjust the thickness as needed
 
     property alias  model:              repeater.model
     property real   maxHeight           ///< Maximum height for control, determines whether text is hidden to make control shorter
@@ -66,7 +68,9 @@ Rectangle {
                 anchors.left:           parent.left
                 anchors.right:          parent.right
                 horizontalAlignment:    Text.AlignHCenter
-                font.pointSize:         ScreenTools.smallFontPointSize
+                font.pointSize:         ScreenTools.defaultFontPixelWidth * 1.5 // Make the title bigger
+                font.bold:              true // Make the title bold
+                color:                  "#46c4f4" // Change title color to match the outline
                 visible:                title != ""
             }
 
