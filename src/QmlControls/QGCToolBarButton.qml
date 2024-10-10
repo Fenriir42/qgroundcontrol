@@ -33,9 +33,18 @@ Button {
 
     background: Rectangle {
         anchors.fill:   parent
-        color:          button.checked ? qgcPal.buttonHighlight : Qt.rgba(0,0,0,0)
+        color:          "#2c406d"
+        radius:         50
         border.color:   "red"
         border.width:   QGroundControl.corePlugin.showTouchAreas ? 3 : 0
+
+        Rectangle {
+            width: parent.width / 2
+            height: parent.height
+            color: "#2c406d"
+            anchors.left: parent.left
+            anchors.verticalCenter: parent.verticalCenter
+        }
     }
 
     contentItem: Row {

@@ -51,7 +51,7 @@ Rectangle {
         gradient: Gradient {
             orientation: Gradient.Horizontal
             GradientStop { position: 0;                                     color: _mainStatusBGColor }
-            GradientStop { position: currentButton.x + currentButton.width; color: _mainStatusBGColor }
+            GradientStop { position: currentButton.x + currentButton.width + 100; color: _mainStatusBGColor } // Extend the gradient effect
             GradientStop { position: 1;                                     color: _root.color }
         }
     }

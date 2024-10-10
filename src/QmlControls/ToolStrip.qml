@@ -68,9 +68,9 @@ Rectangle {
                 anchors.left:           parent.left
                 anchors.right:          parent.right
                 horizontalAlignment:    Text.AlignHCenter
-                font.pointSize:         ScreenTools.defaultFontPixelWidth * 1.5 // Make the title bigger
-                font.bold:              true // Make the title bold
-                color:                  "#46c4f4" // Change title color to match the outline
+                font.pointSize:         ScreenTools.defaultFontPixelWidth * 1.5
+                font.bold:              true
+                color:                  "#46c4f4"
                 visible:                title != ""
             }
 
