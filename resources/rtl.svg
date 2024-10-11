@@ -1,20 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
-	.st2{fill:#FFFFFF;}
-</style>
-<path class="st0" d="M54.244,25.2c3.345,0,6.056,1.958,6.056,4.374v26.353c0,2.416-2.711,4.374-6.056,4.374H17.756
-	c-3.345,0-6.056-1.958-6.056-4.374V29.574c0-2.416,2.711-4.374,6.056-4.374"/>
-<g>
-	<g>
-		<path class="st1" d="M62.002,15.64H45.574c-5.291,0-9.58,4.289-9.58,9.58l0.003,11.472"/>
-		<g>
-			<polygon class="st2" points="22.035,32.61 36.003,56.785 49.958,32.603 			"/>
-		</g>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="25.528" height="34.931" viewBox="0 0 25.528 34.931">
+  <g id="Groupe_21" data-name="Groupe 21" transform="translate(0.035 0.035)">
+    <path id="Icon_fa-solid-arrow-turn-up" data-name="Icon fa-solid-arrow-turn-up" d="M1.585,22.183a1.585,1.585,0,0,0,0,3.169H6.338A4.755,4.755,0,0,0,11.092,20.6V5.411l3.635,3.635A1.586,1.586,0,1,0,16.97,6.8L10.632.464a1.587,1.587,0,0,0-2.243,0L2.05,6.8A1.586,1.586,0,0,0,4.293,9.046l3.63-3.635V20.6a1.583,1.583,0,0,1-1.585,1.585Z" transform="translate(21.922 25.353) rotate(180)" fill="#fff" stroke="#000" stroke-width="0.07"/>
+    <path id="Icon_fa-solid-arrow-right-from-bracket" data-name="Icon fa-solid-arrow-right-from-bracket" d="M7.923,3.169A1.585,1.585,0,1,0,7.923,0H4.754A4.755,4.755,0,0,0,0,4.754V20.7a4.755,4.755,0,0,0,4.754,4.754H7.923a1.585,1.585,0,1,0,0-3.169H4.754A1.583,1.583,0,0,1,3.169,20.7V4.754A1.583,1.583,0,0,1,4.754,3.169Z" transform="translate(0 34.86) rotate(-90)" fill="#fff" stroke="#000" stroke-width="0.07"/>
+  </g>
 </svg>

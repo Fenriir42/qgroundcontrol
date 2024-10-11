@@ -147,7 +147,7 @@ Item {
                         Rectangle {
                             width:  _majorTickWidth
                             height: 1
-                            color:  _qgcPal.text
+                            color:  "#00AEFF"
                         }
 
                         QGCLabel {

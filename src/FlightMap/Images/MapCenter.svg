@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-89 46 72 72" enable-background="new -89 46 72 72" xml:space="preserve">
-<g>
-	<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="-53" cy="82" r="22.38"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="-75.464" y1="81.975" x2="-64.423" y2="82.025"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="-53.025" y1="104.464" x2="-52.975" y2="93.423"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="-30.536" y1="82.025" x2="-41.577" y2="81.975"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="-52.975" y1="59.536" x2="-53.025" y2="70.577"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="31.964" height="31.747" viewBox="0 0 31.964 31.747">
+  <g id="Groupe_86" data-name="Groupe 86" transform="translate(-130.218 -449.392)">
+    <g id="Groupe_83" data-name="Groupe 83" transform="translate(135.014 454.054)">
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="4.234" cy="4.234" r="4.234" transform="translate(6.928 6.928)" fill="#fff"/>
+      <g id="Ellipse_16" data-name="Ellipse 16" fill="none" stroke="#fff" stroke-width="3">
+        <circle cx="11.162" cy="11.162" r="11.162" stroke="none"/>
+        <circle cx="11.162" cy="11.162" r="9.662" fill="none"/>
+      </g>
+    </g>
+    <g id="Groupe_85" data-name="Groupe 85" transform="translate(131.718 450.892)">
+      <path id="Tracé_50785" data-name="Tracé 50785" d="M152.5,1288.006v-4.115" transform="translate(-138.042 -1283.892)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      <path id="Tracé_50786" data-name="Tracé 50786" d="M152.5,1288.006v-4.115" transform="translate(-138.042 -1259.259)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      <g id="Groupe_84" data-name="Groupe 84" transform="translate(0 14.324)">
+        <path id="Tracé_50787" data-name="Tracé 50787" d="M0,4.115V0" transform="translate(28.964 0) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+        <path id="Tracé_50788" data-name="Tracé 50788" d="M0,4.115V0" transform="translate(4.115 0) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
 </svg>

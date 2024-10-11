@@ -42,7 +42,7 @@ Item {
 
     // Properties to hold the thresholds
     property int threshold1: batterySettings.threshold1.rawValue
-    property int threshold2: batterySettings.threshold2.rawValue   
+    property int threshold2: batterySettings.threshold2.rawValue
 
     // Control visibility based on battery state display setting
     property bool batteryState: batterySettings.battery_state_display.rawValue
@@ -96,26 +96,29 @@ Item {
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_OK:
                         if (!isNaN(battery.percentRemaining.rawValue)) {
                             if (battery.percentRemaining.rawValue > threshold1) {
-                                return qgcPal.colorGreen 
+                                return qgcPal.colorGreen
                             } else if (battery.percentRemaining.rawValue > threshold2) {
-                                return qgcPal.colorYellowGreen 
-                            } else {
-                                return qgcPal.colorYellow 
+                                return qgcPal.colorYellowGreen
+                            } else if ( battery.percentRemaining.rawValue > 40) {
+                                return qgcPal.colorYellow
+                            } else if ( battery.percentRemaining.rawValue > 20) {
+                                return qgcPal.colorOrange
+                            } else if ( battery.percentRemaining.rawValue > 10) {
+                                return qgcPal.colorRed
                             }
                         } else {
                             return qgcPal.text
                         }
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_LOW:
-                        return qgcPal.colorOrange
+
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_CRITICAL:
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_EMERGENCY:
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_FAILED:
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_UNHEALTHY:
-                        return qgcPal.colorRed
                     default:
                         return qgcPal.text
                 }
-            }    
+            }
 
             function getBatterySvgSource() {
 
@@ -126,14 +129,16 @@ Item {
                                 return "/qmlimages/BatteryGreen.svg"
                             } else if (battery.percentRemaining.rawValue > threshold2) {
                                 return "/qmlimages/BatteryYellowGreen.svg"
-                            } else {
-                                return "/qmlimages/BatteryYellow.svg"    
-                            } 
+                            } else if ( battery.percentRemaining.rawValue > 40) {
+                                return "/qmlimages/BatteryYellow.svg"
+                            } else if ( battery.percentRemaining.rawValue > 20) {
+                                return "/qmlimages/BatteryOrange.svg"
+                            } else if ( battery.percentRemaining.rawValue > 10) {
+                                return "/qmlimages/BatteryCritical.svg"
+                            }
                         }
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_LOW:
-                        return "/qmlimages/BatteryOrange.svg" // Low with orange svg
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_CRITICAL:
-                        return "/qmlimages/BatteryCritical.svg" // Critical with red svg
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_EMERGENCY:
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_FAILED:
                     case MAVLink.MAV_BATTERY_CHARGE_STATE_UNHEALTHY:
@@ -326,7 +331,7 @@ Item {
                         }
                     }
                 }
-                
+
             }
 
             SettingsGroupLayout {
@@ -361,21 +366,7 @@ Item {
                             fillMode: Image.PreserveAspectFit
                             color: qgcPal.colorYellowGreen
                         }
-                        FactTextField {
-                            id: threshold1Field
-                            fact: batterySettings.threshold1
-                            implicitWidth: ScreenTools.defaultFontPixelWidth * 5.5
-                            height: ScreenTools.defaultFontPixelHeight * 1.5
-                            visible: threshold1visible
-                            onEditingFinished: {
-                                // Validate and set the new threshold value
-                                batterySettings.setThreshold1(parseInt(text));
-                            }
-                        }
-                    }
-                    QGCLabel {
-                        visible: !threshold1visible 
-                        text: qsTr("") + batterySettings.threshold1.rawValue.toString() + qsTr("%")
+                        QGCLabel { text: qsTr("80%") }
                     }
 
                     // Threshold 2
@@ -388,17 +379,7 @@ Item {
                             fillMode: Image.PreserveAspectFit
                             color: qgcPal.colorYellow
                         }
-                        FactTextField {
-                            id: threshold2Field
-                            fact: batterySettings.threshold2
-                            implicitWidth: ScreenTools.defaultFontPixelWidth * 5.5
-                            height: ScreenTools.defaultFontPixelHeight * 1.5
-                            visible: threshold2visible
-                            onEditingFinished: {
-                                // Validate and set the new threshold value
-                                batterySettings.setThreshold2(parseInt(text));                                
-                            }
-                        }
+                        QGCLabel { text: qsTr("60%") }
                     }
                     QGCLabel {
                         visible: !threshold2visible
@@ -415,7 +396,7 @@ Item {
                             fillMode: Image.PreserveAspectFit
                             color: qgcPal.colorOrange
                         }
-                        QGCLabel { text: qsTr("Low") }
+                        QGCLabel { text: qsTr("40%") }
                     }
 
                     // Critical state
@@ -428,7 +409,7 @@ Item {
                             fillMode: Image.PreserveAspectFit
                             color: qgcPal.colorRed
                         }
-                        QGCLabel { text: qsTr("Critical") }
+                        QGCLabel { text: qsTr("20%") }
                     }
                 }
             }

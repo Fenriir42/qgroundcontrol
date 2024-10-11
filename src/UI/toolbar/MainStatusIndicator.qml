@@ -272,7 +272,7 @@ RowLayout {
                         textFormat:         TextEdit.RichText
                         clip:               true
                         visible:            object.expanded
-                        
+
                         property var fact:  null
 
                         onLinkActivated: (link) => {
@@ -327,7 +327,7 @@ RowLayout {
                     QGCLabel { Layout.fillWidth: true; text: qsTr("Vehicle Parameters") }
                     QGCButton {
                         text: qsTr("Configure")
-                        onClicked: {                            
+                        onClicked: {
                             mainWindow.showVehicleSetupTool(qsTr("Parameters"))
                             mainWindow.closeIndicatorDrawer()
                         }
@@ -336,7 +336,7 @@ RowLayout {
                     QGCLabel { Layout.fillWidth: true; text: qsTr("Initial Vehicle Setup") }
                     QGCButton {
                         text: qsTr("Configure")
-                        onClicked: {                            
+                        onClicked: {
                             mainWindow.showVehicleSetupTool()
                             mainWindow.closeIndicatorDrawer()
                         }
@@ -367,4 +367,3 @@ RowLayout {
         }
     }
 }
-
