@@ -52,7 +52,7 @@ RowLayout {
                     return mainStatusLabel._commLostText
                 }
                 if (_activeVehicle.armed) {
-                    _mainStatusBGColor = "green"
+                    _mainStatusBGColor = "#00AEFF"
 
                     if (_healthAndArmingChecksSupported) {
                         if (_activeVehicle.healthAndArmingCheckReport.canArm) {
@@ -77,7 +77,7 @@ RowLayout {
                             if (_activeVehicle.healthAndArmingCheckReport.hasWarningsOrErrors) {
                                 _mainStatusBGColor = "yellow"
                             } else {
-                                _mainStatusBGColor = "green"
+                                _mainStatusBGColor = "#00AEFF"
                             }
                             return mainStatusLabel._readyToFlyText
                         } else {
@@ -86,7 +86,7 @@ RowLayout {
                         }
                     } else if (_activeVehicle.readyToFlyAvailable) {
                         if (_activeVehicle.readyToFly) {
-                            _mainStatusBGColor = "green"
+                            _mainStatusBGColor = "#00AEFF"
                             return mainStatusLabel._readyToFlyText
                         } else {
                             _mainStatusBGColor = "yellow"
@@ -95,7 +95,7 @@ RowLayout {
                     } else {
                         // Best we can do is determine readiness based on AutoPilot component setup and health indicators from SYS_STATUS
                         if (_activeVehicle.allSensorsHealthy && _activeVehicle.autopilot.setupComplete) {
-                            _mainStatusBGColor = "green"
+                            _mainStatusBGColor = "#00AEFF"
                             return mainStatusLabel._readyToFlyText
                         } else {
                             _mainStatusBGColor = "yellow"
